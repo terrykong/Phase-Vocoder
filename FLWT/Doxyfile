@@ -1,0 +1,15 @@
+OUTPUT_DIRECTORY = /Users/terrykong/Desktop/FLWT/doxygen
+# EXTRACT_ALL = yes
+# EXTRACT_PRIVATE = yes
+EXTRACT_STATIC = yes
+INPUT = /Users/terrykong/Desktop/FLWT
+#Do not add anything here unless you need to. Doxygen already covers all 
+#common formats like .c/.cc/.cxx/.c++/.cpp/.inl/.h/.hpp
+FILE_PATTERNS = 
+RECURSIVE = yes
+USE_PDFLATEX = yes
+PDF_HYPERLINKS = yes
+GENERATE_LATEX = yes
+
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO

@@ -1,0 +1,276 @@
+\hypertarget{class_f_l_w_t}{}\section{F\+L\+W\+T Class Reference}
+\label{class_f_l_w_t}\index{F\+L\+W\+T@{F\+L\+W\+T}}
+
+
+Short class description.  
+
+
+
+
+{\ttfamily \#include $<$F\+L\+W\+T.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_f_l_w_t_a265f92a446000bd224d90fe659c33ff2}{F\+L\+W\+T} (int levels, int window\+Len=D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+I\+N\+\_\+\+L\+E\+N\+G\+T\+H)
+\begin{DoxyCompactList}\small\item\em Function initializes fast lifting wavelet transform module for pitch detection. \end{DoxyCompactList}\item 
+\hyperlink{class_f_l_w_t_aa9b28c200e5faf5196389bccaf94e499}{$\sim$\+F\+L\+W\+T} ()
+\item 
+float \hyperlink{class_f_l_w_t_a19063b3e713574663ceac2e19ba22559}{get\+Pitch} (int $\ast$data, int datalen, long fs)
+\begin{DoxyCompactList}\small\item\em Calculates the pitch of a set of data. \end{DoxyCompactList}\item 
+float \hyperlink{class_f_l_w_t_ab7f95afbd68d790c1cf2b5acc22d45ed}{get\+Pitch\+With\+Median5} (int $\ast$data, int datalen, long fs)
+\begin{DoxyCompactList}\small\item\em Calculates the pitch of a set of data using a median filter. \end{DoxyCompactList}\item 
+float \hyperlink{class_f_l_w_t_ab1116042381c689f1115ddd5267e57e5}{get\+Pitch\+Last\+Reliable} (int $\ast$data, int datalen, long fs)
+\begin{DoxyCompactList}\small\item\em Calculates the pitch of a set of data. \end{DoxyCompactList}\item 
+float \hyperlink{class_f_l_w_t_af32592c296cbdcf3f6fa48320bd2a5bb}{get\+Pitch\+Octave\+Invariant} (int $\ast$data, int datalen, long fs)
+\begin{DoxyCompactList}\small\item\em Calculates the pitch of a set of data. \end{DoxyCompactList}\item 
+float \hyperlink{class_f_l_w_t_a566b79ef139ad7e5b3caaf461e381ade}{get\+Pitch\+Robust} (int $\ast$data, int datalen, long fs)
+\begin{DoxyCompactList}\small\item\em Calculates the pitch of a set of data (robustly). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Short class description. 
+
+Verbose description of class details.
+
+Note the following example code\+: 
+\begin{DoxyCode}
+Window win = \textcolor{keyword}{new} Window(parent);
+win.show();
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_f_l_w_t_a265f92a446000bd224d90fe659c33ff2}{}\index{F\+L\+W\+T@{F\+L\+W\+T}!F\+L\+W\+T@{F\+L\+W\+T}}
+\index{F\+L\+W\+T@{F\+L\+W\+T}!F\+L\+W\+T@{F\+L\+W\+T}}
+\subsubsection[{F\+L\+W\+T}]{\setlength{\rightskip}{0pt plus 5cm}F\+L\+W\+T\+::\+F\+L\+W\+T (
+\begin{DoxyParamCaption}
+\item[{int}]{levels, }
+\item[{int}]{window\+Len = {\ttfamily DEFAULT\+\_\+WIN\+\_\+LENGTH}}
+\end{DoxyParamCaption}
+)}\label{class_f_l_w_t_a265f92a446000bd224d90fe659c33ff2}
+
+
+Function initializes fast lifting wavelet transform module for pitch detection. 
+
+==============================================================================
+
+\mbox{[}Verbose description of method (or function) details.\mbox{]}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]\mbox{[} Finish writing the details\mbox{]}\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em levels} & Number of levels for the \hyperlink{class_f_l_w_t}{F\+L\+W\+T} algorithm \\
+\hline
+{\em window\+Len} & Length of the window\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\subsection*{\href{http://online.physics.uiuc.edu/courses/phys406/NSF_REU_Reports/2005_reu/Real-Time_Time-Domain_Pitch_Tracking_Using_Wavelets.pdf}{\tt http\+://online.\+physics.\+uiuc.\+edu/courses/phys406/\+N\+S\+F\+\_\+\+R\+E\+U\+\_\+\+Reports/2005\+\_\+reu/\+Real-\/\+Time\+\_\+\+Time-\/\+Domain\+\_\+\+Pitch\+\_\+\+Tracking\+\_\+\+Using\+\_\+\+Wavelets.\+pdf} }
+\end{DoxySeeAlso}
+\hypertarget{class_f_l_w_t_aa9b28c200e5faf5196389bccaf94e499}{}\index{F\+L\+W\+T@{F\+L\+W\+T}!````~F\+L\+W\+T@{$\sim$\+F\+L\+W\+T}}
+\index{````~F\+L\+W\+T@{$\sim$\+F\+L\+W\+T}!F\+L\+W\+T@{F\+L\+W\+T}}
+\subsubsection[{$\sim$\+F\+L\+W\+T}]{\setlength{\rightskip}{0pt plus 5cm}F\+L\+W\+T\+::$\sim$\+F\+L\+W\+T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_f_l_w_t_aa9b28c200e5faf5196389bccaf94e499}
+Standard destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_f_l_w_t_a19063b3e713574663ceac2e19ba22559}{}\index{F\+L\+W\+T@{F\+L\+W\+T}!get\+Pitch@{get\+Pitch}}
+\index{get\+Pitch@{get\+Pitch}!F\+L\+W\+T@{F\+L\+W\+T}}
+\subsubsection[{get\+Pitch}]{\setlength{\rightskip}{0pt plus 5cm}float F\+L\+W\+T\+::get\+Pitch (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{data, }
+\item[{int}]{datalen, }
+\item[{long}]{fs}
+\end{DoxyParamCaption}
+)}\label{class_f_l_w_t_a19063b3e713574663ceac2e19ba22559}
+
+
+Calculates the pitch of a set of data. 
+
+====================================================
+
+Uses the \hyperlink{class_f_l_w_t}{F\+L\+W\+T} described in Eric Larson and Ross Maddox\textquotesingle{}s paper. The algorithm was optimized for embedded systems that do not have dedicated hardware for floating point arithmetic by removing any floating point operation that was not deemed necessary to calculate the pitch. This of course decreases the accuracy of the algorithm, but at the same time increases the efficiency of the algorithm. If a more precise calculation of pitch is desired, check out the U\+R\+L below for a floating point implementation of this algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to array of data \\
+\hline
+{\em datalen} & Length of the array \\
+\hline
+{\em fs} & Sampling frequency of data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pitch of the window
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em pitch} & 
+\begin{DoxyItemize}
+\item 0.\+0 \+: Determines the data is pitchless 
+\item $>$ 0.\+0 \+: Found a pitch 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\subsection*{\href{http://www.schmittmachine.com/dywapitchtrack.html}{\tt http\+://www.\+schmittmachine.\+com/dywapitchtrack.\+html} }
+\end{DoxySeeAlso}
+\hypertarget{class_f_l_w_t_ab1116042381c689f1115ddd5267e57e5}{}\index{F\+L\+W\+T@{F\+L\+W\+T}!get\+Pitch\+Last\+Reliable@{get\+Pitch\+Last\+Reliable}}
+\index{get\+Pitch\+Last\+Reliable@{get\+Pitch\+Last\+Reliable}!F\+L\+W\+T@{F\+L\+W\+T}}
+\subsubsection[{get\+Pitch\+Last\+Reliable}]{\setlength{\rightskip}{0pt plus 5cm}float F\+L\+W\+T\+::get\+Pitch\+Last\+Reliable (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{data, }
+\item[{int}]{datalen, }
+\item[{long}]{fs}
+\end{DoxyParamCaption}
+)}\label{class_f_l_w_t_ab1116042381c689f1115ddd5267e57e5}
+
+
+Calculates the pitch of a set of data. 
+
+====================================================
+
+Uses the same algorithm as described in F\+L\+W\+T\+::getpitch. If the current data is pitchless, this returns the last non-\/zero result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to array of data \\
+\hline
+{\em datalen} & Length of the array \\
+\hline
+{\em fs} & Sampling frequency of data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pitch of the window (non-\/zero)
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em pitch} & 
+
+ \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_f_l_w_t_af32592c296cbdcf3f6fa48320bd2a5bb}{}\index{F\+L\+W\+T@{F\+L\+W\+T}!get\+Pitch\+Octave\+Invariant@{get\+Pitch\+Octave\+Invariant}}
+\index{get\+Pitch\+Octave\+Invariant@{get\+Pitch\+Octave\+Invariant}!F\+L\+W\+T@{F\+L\+W\+T}}
+\subsubsection[{get\+Pitch\+Octave\+Invariant}]{\setlength{\rightskip}{0pt plus 5cm}float F\+L\+W\+T\+::get\+Pitch\+Octave\+Invariant (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{data, }
+\item[{int}]{datalen, }
+\item[{long}]{fs}
+\end{DoxyParamCaption}
+)}\label{class_f_l_w_t_af32592c296cbdcf3f6fa48320bd2a5bb}
+
+
+Calculates the pitch of a set of data. 
+
+====================================================
+
+Uses the same algorithm as described in F\+L\+W\+T\+::getpitch. If the new pitch is either twice or half the frequency of the previous window, the new pitch is considered an error and the return value is the pitch of the last window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to array of data \\
+\hline
+{\em datalen} & Length of the array \\
+\hline
+{\em fs} & Sampling frequency of data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pitch of the window that is octave invariant
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em pitch} & 
+
+ \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{class_f_l_w_t_a566b79ef139ad7e5b3caaf461e381ade}{}\index{F\+L\+W\+T@{F\+L\+W\+T}!get\+Pitch\+Robust@{get\+Pitch\+Robust}}
+\index{get\+Pitch\+Robust@{get\+Pitch\+Robust}!F\+L\+W\+T@{F\+L\+W\+T}}
+\subsubsection[{get\+Pitch\+Robust}]{\setlength{\rightskip}{0pt plus 5cm}float F\+L\+W\+T\+::get\+Pitch\+Robust (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{data, }
+\item[{int}]{datalen, }
+\item[{long}]{fs}
+\end{DoxyParamCaption}
+)}\label{class_f_l_w_t_a566b79ef139ad7e5b3caaf461e381ade}
+
+
+Calculates the pitch of a set of data (robustly). 
+
+====================================================
+
+Uses the same algorithm as described in F\+L\+W\+T\+::getpitch. It uses a robust algorithm that is a combination of all the methods included in this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to array of data \\
+\hline
+{\em datalen} & Length of the array \\
+\hline
+{\em fs} & Sampling frequency of data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pitch of the window
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em pitch} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Make this function more reliable and robust\end{DoxyRefDesc}
+
+
+ \hypertarget{class_f_l_w_t_ab7f95afbd68d790c1cf2b5acc22d45ed}{}\index{F\+L\+W\+T@{F\+L\+W\+T}!get\+Pitch\+With\+Median5@{get\+Pitch\+With\+Median5}}
+\index{get\+Pitch\+With\+Median5@{get\+Pitch\+With\+Median5}!F\+L\+W\+T@{F\+L\+W\+T}}
+\subsubsection[{get\+Pitch\+With\+Median5}]{\setlength{\rightskip}{0pt plus 5cm}float F\+L\+W\+T\+::get\+Pitch\+With\+Median5 (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{data, }
+\item[{int}]{datalen, }
+\item[{long}]{fs}
+\end{DoxyParamCaption}
+)}\label{class_f_l_w_t_ab7f95afbd68d790c1cf2b5acc22d45ed}
+
+
+Calculates the pitch of a set of data using a median filter. 
+
+====================================================
+
+Uses a median filter to calculate the median on the past 5 frequencies including the newest one calculated from the new set of data. Uses the same algorithm as described in F\+L\+W\+T\+::getpitch. This has a slightly larger overhead to return the pitch.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to array of data \\
+\hline
+{\em datalen} & Length of the array \\
+\hline
+{\em fs} & Sampling frequency of data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pitch of the window passed through a median filter
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em pitch} & 
+
+ \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_f_l_w_t_8h}{F\+L\+W\+T.\+h}\item 
+\hyperlink{_f_l_w_t_8cpp}{F\+L\+W\+T.\+cpp}\end{DoxyCompactItemize}

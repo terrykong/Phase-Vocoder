@@ -1,0 +1,123 @@
+\hypertarget{class_p_s_o_l_a}{}\section{P\+S\+O\+L\+A Class Reference}
+\label{class_p_s_o_l_a}\index{P\+S\+O\+L\+A@{P\+S\+O\+L\+A}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_s_o_l_a_ae27c27445ea2dc9b9f109234c8ea477e}{P\+S\+O\+L\+A} (int buffer\+Len)
+\begin{DoxyCompactList}\small\item\em Function initializes the pitch correction module. \end{DoxyCompactList}\item 
+\hyperlink{class_p_s_o_l_a_aabc471f16b8ebc1c62813e3937826903}{$\sim$\+P\+S\+O\+L\+A} ()
+\item 
+void \hyperlink{class_p_s_o_l_a_a057fb777dc9ca7cdf514230eee2c47b1}{pitch\+Correct} (int $\ast$input, int Fs, float input\+Pitch, float desired\+Pitch)
+\begin{DoxyCompactList}\small\item\em Corrects the pitch of the input. \end{DoxyCompactList}\item 
+void \hyperlink{class_p_s_o_l_a_a040472615313356939713eb7a4c99106}{bartlett} (int $\ast$window, int length)
+\begin{DoxyCompactList}\small\item\em Computes a bartlett window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_p_s_o_l_a_ae27c27445ea2dc9b9f109234c8ea477e}{}\index{P\+S\+O\+L\+A@{P\+S\+O\+L\+A}!P\+S\+O\+L\+A@{P\+S\+O\+L\+A}}
+\index{P\+S\+O\+L\+A@{P\+S\+O\+L\+A}!P\+S\+O\+L\+A@{P\+S\+O\+L\+A}}
+\subsubsection[{P\+S\+O\+L\+A}]{\setlength{\rightskip}{0pt plus 5cm}P\+S\+O\+L\+A\+::\+P\+S\+O\+L\+A (
+\begin{DoxyParamCaption}
+\item[{int}]{buffer\+Len}
+\end{DoxyParamCaption}
+)}\label{class_p_s_o_l_a_ae27c27445ea2dc9b9f109234c8ea477e}
+
+
+Function initializes the pitch correction module. 
+
+==============================================================================
+
+The pitch correction module is designed for Q15 data. Pitch correction may not work correctly unless buffer is long enough for the given sampling frequency and pitch.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Improve to T\+D-\/\+P\+S\+O\+L\+A algorithm to account for phase inconsistencies between buffers\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer\+Len} & Number of data the module expects when \hyperlink{class_p_s_o_l_a_a057fb777dc9ca7cdf514230eee2c47b1}{pitch\+Correct()} is called in order to optimize performance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\subsection*{E.\+moulines and W. Verhelst. Time-\/domain and frequency-\/domain techniques for prosodic modifications of speech. In W. Bastiaan Kleijn and K.\+K. Paliwal, editors, Speech Coding and Synthesis, chapter 15, pages 519-\/555. Elsevier, 1995. }
+\end{DoxySeeAlso}
+\hypertarget{class_p_s_o_l_a_aabc471f16b8ebc1c62813e3937826903}{}\index{P\+S\+O\+L\+A@{P\+S\+O\+L\+A}!````~P\+S\+O\+L\+A@{$\sim$\+P\+S\+O\+L\+A}}
+\index{````~P\+S\+O\+L\+A@{$\sim$\+P\+S\+O\+L\+A}!P\+S\+O\+L\+A@{P\+S\+O\+L\+A}}
+\subsubsection[{$\sim$\+P\+S\+O\+L\+A}]{\setlength{\rightskip}{0pt plus 5cm}P\+S\+O\+L\+A\+::$\sim$\+P\+S\+O\+L\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_p_s_o_l_a_aabc471f16b8ebc1c62813e3937826903}
+Standard destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_p_s_o_l_a_a040472615313356939713eb7a4c99106}{}\index{P\+S\+O\+L\+A@{P\+S\+O\+L\+A}!bartlett@{bartlett}}
+\index{bartlett@{bartlett}!P\+S\+O\+L\+A@{P\+S\+O\+L\+A}}
+\subsubsection[{bartlett}]{\setlength{\rightskip}{0pt plus 5cm}void P\+S\+O\+L\+A\+::bartlett (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{window, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)}\label{class_p_s_o_l_a_a040472615313356939713eb7a4c99106}
+
+
+Computes a bartlett window. 
+
+====================================================
+
+Computes a bartlett window in-\/place with Q15 coefficients quickly
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Pointer to array of Q15 data (buffer\+Len long) \\
+\hline
+{\em length} & Length of the window\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]More accurate implementation of bartlett window\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]Fast Hann window implementation to replace Bartlett window\end{DoxyRefDesc}
+
+
+ \hypertarget{class_p_s_o_l_a_a057fb777dc9ca7cdf514230eee2c47b1}{}\index{P\+S\+O\+L\+A@{P\+S\+O\+L\+A}!pitch\+Correct@{pitch\+Correct}}
+\index{pitch\+Correct@{pitch\+Correct}!P\+S\+O\+L\+A@{P\+S\+O\+L\+A}}
+\subsubsection[{pitch\+Correct}]{\setlength{\rightskip}{0pt plus 5cm}void P\+S\+O\+L\+A\+::pitch\+Correct (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{input, }
+\item[{int}]{Fs, }
+\item[{float}]{input\+Pitch, }
+\item[{float}]{desired\+Pitch}
+\end{DoxyParamCaption}
+)}\label{class_p_s_o_l_a_a057fb777dc9ca7cdf514230eee2c47b1}
+
+
+Corrects the pitch of the input. 
+
+====================================================
+
+Uses an implementation of the T\+D-\/\+P\+S\+O\+L\+A method for pitch shifting. To obtain better results, lower the sampling frequency or decrease the difference between the pitch of the input and the desired pitch. Calculates the output in-\/place. The input must be in Q15 format. It assumes that the pitch over the input is relatively constant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Pointer to array of Q15 data (buffer\+Len long) \\
+\hline
+{\em Fs} & Sampling frequency of data \\
+\hline
+{\em input\+Pitch} & Estimated pitch of input \\
+\hline
+{\em desired\+Pitch} & Desired pitch\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Fast Hann window implementation to replace Bartlett window\end{DoxyRefDesc}
+
+
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_s_o_l_a_8h}{P\+S\+O\+L\+A.\+h}\item 
+\hyperlink{_p_s_o_l_a_8cpp}{P\+S\+O\+L\+A.\+cpp}\end{DoxyCompactItemize}

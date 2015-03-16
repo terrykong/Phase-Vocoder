@@ -1,0 +1,17 @@
+\begin{DoxyAuthor}{Author}
+Terry Kong 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Mar. 9, 2015
+\end{DoxyDate}
+\hypertarget{index_desc_sec}{}\section{Description}\label{index_desc_sec}
+This is a fast implementation of the \hyperlink{class_f_l_w_t}{F\+L\+W\+T} for pitch detection. The implementation works on integer data, which is the preferred data type on embedded systems. The algorithm is discussed in great detail in \href{http://online.physics.uiuc.edu/courses/phys406/NSF_REU_Reports/2005_reu/Real-Time_Time-Domain_Pitch_Tracking_Using_Wavelets.pdf}{\tt http\+://online.\+physics.\+uiuc.\+edu/courses/phys406/\+N\+S\+F\+\_\+\+R\+E\+U\+\_\+\+Reports/2005\+\_\+reu/\+Real-\/\+Time\+\_\+\+Time-\/\+Domain\+\_\+\+Pitch\+\_\+\+Tracking\+\_\+\+Using\+\_\+\+Wavelets.\+pdf}
+
+~\newline
+ Included in this class are an assortment of wrapper functions that help increase the consistency between pitch measurements. The most reliable of which involves using a median filter to smooth out the fluctuations in frequency.
+
+~\newline
+ This pitch detection algorithm works best when the audio has a singal strong fundamental harmonic. Audio with a mixture of fundamental harmonics, like a music track with many instruments, is not likely to be processed well. Also, The change in pitch with time needs to be relatively slow in order for the algorithm to estimatethe pitch reliably. If the algorithm decides the windowed audio is pitchless, it conservatively returns 0.\hypertarget{index_contents_sec}{}\section{Table of Contents}\label{index_contents_sec}
+\hyperlink{_f_l_w_t_8cpp}{F\+L\+W\+T.\+cpp}
+
+\hyperlink{_f_l_w_t_8h}{F\+L\+W\+T.\+h} 

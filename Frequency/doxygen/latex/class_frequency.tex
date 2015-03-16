@@ -1,0 +1,161 @@
+\hypertarget{class_frequency}{}\section{Frequency Class Reference}
+\label{class_frequency}\index{Frequency@{Frequency}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_frequency_a47545fddd4730f5ebebfb6f33bce8942}{get\+Closest\+Key\+Num} (float freq)
+\begin{DoxyCompactList}\small\item\em Returns the key number. \end{DoxyCompactList}\item 
+int \hyperlink{class_frequency_af927c6cee9c84e5acd26d8fdd78cc15b}{get\+Closest\+Key\+Num\+In\+Scale} (float freq, int key\+That\+Begins\+Scale, int major\+Or\+Minor)
+\begin{DoxyCompactList}\small\item\em Returns the closest key number restricted to a scale. \end{DoxyCompactList}\item 
+float \hyperlink{class_frequency_a003808da641b9c42e1775ee807124d3b}{get\+Closest\+Key\+Freq\+In\+Scale} (float freq, int key\+That\+Begins\+Scale, int major\+Or\+Minor)
+\begin{DoxyCompactList}\small\item\em Returns the closest key frequency restricted to a scale. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_frequency_aecd0a59f9b6a387090f31a3d12afb62a}{get\+Key\+Name} (int keynum)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a string holding the name of the key number. \end{DoxyCompactList}\item 
+float \hyperlink{class_frequency_ab1cbabec098dfffe96847b5c806dae98}{get\+Freq\+Of\+Key\+Num} (int key)
+\begin{DoxyCompactList}\small\item\em Returns the frequency of a key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_frequency_a003808da641b9c42e1775ee807124d3b}{}\index{Frequency@{Frequency}!get\+Closest\+Key\+Freq\+In\+Scale@{get\+Closest\+Key\+Freq\+In\+Scale}}
+\index{get\+Closest\+Key\+Freq\+In\+Scale@{get\+Closest\+Key\+Freq\+In\+Scale}!Frequency@{Frequency}}
+\subsubsection[{get\+Closest\+Key\+Freq\+In\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}float Frequency\+::get\+Closest\+Key\+Freq\+In\+Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{freq, }
+\item[{int}]{key\+That\+Begins\+Scale, }
+\item[{int}]{major\+Or\+Minor}
+\end{DoxyParamCaption}
+)}\label{class_frequency_a003808da641b9c42e1775ee807124d3b}
+
+
+Returns the closest key frequency restricted to a scale. 
+
+====================================================
+
+Returns the key number restricted to a scale\+: if bigger than max or smaller than min, returns N\+U\+M\+\_\+\+O\+F\+\_\+\+K\+E\+Y\+S or 0 respectively. The key that specifies the beginning of the scale can be anywhere between 1 and 88, but the frequency returned can be anywhere between the highest and lowest frequency piano key frequency.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & frequency \\
+\hline
+{\em key\+That\+Begins\+Scale} & Pick a key on the piano that begins the scale \\
+\hline
+{\em major\+Or\+Minor} & 1 = major, -\/1 = minor, otherwise = major\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Key number 
+
+ 
+\end{DoxyReturn}
+\hypertarget{class_frequency_a47545fddd4730f5ebebfb6f33bce8942}{}\index{Frequency@{Frequency}!get\+Closest\+Key\+Num@{get\+Closest\+Key\+Num}}
+\index{get\+Closest\+Key\+Num@{get\+Closest\+Key\+Num}!Frequency@{Frequency}}
+\subsubsection[{get\+Closest\+Key\+Num}]{\setlength{\rightskip}{0pt plus 5cm}int Frequency\+::get\+Closest\+Key\+Num (
+\begin{DoxyParamCaption}
+\item[{float}]{freq}
+\end{DoxyParamCaption}
+)}\label{class_frequency_a47545fddd4730f5ebebfb6f33bce8942}
+
+
+Returns the key number. 
+
+====================================================
+
+Returns the key number\+: if bigger than max or smaller than min, returns N\+U\+M\+\_\+\+O\+F\+\_\+\+K\+E\+Y\+S or 0 respectively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & frequency\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Key number 
+
+ 
+\end{DoxyReturn}
+\hypertarget{class_frequency_af927c6cee9c84e5acd26d8fdd78cc15b}{}\index{Frequency@{Frequency}!get\+Closest\+Key\+Num\+In\+Scale@{get\+Closest\+Key\+Num\+In\+Scale}}
+\index{get\+Closest\+Key\+Num\+In\+Scale@{get\+Closest\+Key\+Num\+In\+Scale}!Frequency@{Frequency}}
+\subsubsection[{get\+Closest\+Key\+Num\+In\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}int Frequency\+::get\+Closest\+Key\+Num\+In\+Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{freq, }
+\item[{int}]{key\+That\+Begins\+Scale, }
+\item[{int}]{major\+Or\+Minor}
+\end{DoxyParamCaption}
+)}\label{class_frequency_af927c6cee9c84e5acd26d8fdd78cc15b}
+
+
+Returns the closest key number restricted to a scale. 
+
+====================================================
+
+Returns the key number restricted to a scale\+: if bigger than max or smaller than min, returns N\+U\+M\+\_\+\+O\+F\+\_\+\+K\+E\+Y\+S or 0 respectively. The key that specifies the beginning of the scale can be anywhere between 1 and 88, but the value returned can be anywhere between 1 and 88.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & frequency \\
+\hline
+{\em key\+That\+Begins\+Scale} & Pick a key on the piano that begins the scale \\
+\hline
+{\em major\+Or\+Minor} & 1 = major, -\/1 = minor, otherwise = major\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Key number 
+
+ 
+\end{DoxyReturn}
+\hypertarget{class_frequency_ab1cbabec098dfffe96847b5c806dae98}{}\index{Frequency@{Frequency}!get\+Freq\+Of\+Key\+Num@{get\+Freq\+Of\+Key\+Num}}
+\index{get\+Freq\+Of\+Key\+Num@{get\+Freq\+Of\+Key\+Num}!Frequency@{Frequency}}
+\subsubsection[{get\+Freq\+Of\+Key\+Num}]{\setlength{\rightskip}{0pt plus 5cm}float Frequency\+::get\+Freq\+Of\+Key\+Num (
+\begin{DoxyParamCaption}
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)}\label{class_frequency_ab1cbabec098dfffe96847b5c806dae98}
+
+
+Returns the frequency of a key. 
+
+====================================================
+
+Returns the frequency of a key\+: if bigger than max or smaller than min, returns N\+U\+M\+\_\+\+O\+F\+\_\+\+K\+E\+Y\+S or 0 respectively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freq} & frequency\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Key frequency 
+
+ 
+\end{DoxyReturn}
+\hypertarget{class_frequency_aecd0a59f9b6a387090f31a3d12afb62a}{}\index{Frequency@{Frequency}!get\+Key\+Name@{get\+Key\+Name}}
+\index{get\+Key\+Name@{get\+Key\+Name}!Frequency@{Frequency}}
+\subsubsection[{get\+Key\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Frequency\+::get\+Key\+Name (
+\begin{DoxyParamCaption}
+\item[{int}]{keynum}
+\end{DoxyParamCaption}
+)}\label{class_frequency_aecd0a59f9b6a387090f31a3d12afb62a}
+
+
+Returns a pointer to a string holding the name of the key number. 
+
+====================================================
+
+Returns a pointer to a string holding the name of the key number. It accepts keys from 1 to N\+U\+M\+\_\+\+P\+I\+A\+N\+O\+\_\+\+K\+E\+Y\+S
+
+
+\begin{DoxyParams}{Parameters}
+{\em keynum} & Key Number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to char$\ast$ with name of key 
+
+ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_frequency_8h}{Frequency.\+h}\item 
+\hyperlink{_frequency_8cpp}{Frequency.\+cpp}\end{DoxyCompactItemize}

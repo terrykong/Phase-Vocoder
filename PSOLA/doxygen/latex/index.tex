@@ -1,0 +1,17 @@
+\begin{DoxyAuthor}{Author}
+Terry Kong 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Mar. 9, 2015
+\end{DoxyDate}
+\hypertarget{index_desc_sec}{}\section{Description}\label{index_desc_sec}
+This is a crude implementation of the well known Time-\/\+Domain Pitch Synchronous and Add method used for pitch shifting. This implementation does not deal with the phase inconsistencies that are introduced when pitch correcting window by window. If your application deals with very short windows relative to your sampling frequency, there will be a significant \char`\"{}talking-\/into-\/a-\/fan\char`\"{} effect. My advice would be to use this on a significantly long piece of audio.
+
+~\newline
+ Generally this algorithm involves locating all the time epochs in the analysis window and mapping them to the synthesis epochs. This implementation does not locate the time epochs in the analysis window. This makes the algorithm less robust, and generally causes a degredation in the signal quality as well as introducting some distortion.
+
+~\newline
+ Future work includes implementing a peak finding algorithm. However, depending on your application this might not be desirable since peak finding algorithms add a significant overhead to this algorithm.\hypertarget{index_contents_sec}{}\section{Table of Contents}\label{index_contents_sec}
+\hyperlink{_p_s_o_l_a_8cpp}{P\+S\+O\+L\+A.\+cpp}
+
+\hyperlink{_p_s_o_l_a_8h}{P\+S\+O\+L\+A.\+h} 
